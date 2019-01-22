@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr" class="loading">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="SWISS ECO CONCEPT">
+    <title>GEC CTR</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="./app-assets/images/ico/apple-icon-60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./app-assets/images/ico/apple-icon-76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./app-assets/images/ico/apple-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./app-assets/images/ico/apple-icon-152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="./app-assets/images/ico/favicon-32.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.7/css/select.dataTables.min.css">
+    <!-- font icons-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/fonts/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/fonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/extensions/pace.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN ROBUST CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/app.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
+    <!-- END ROBUST CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-overlay-menu.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- END Custom CSS-->
+    
+    
+    
+ 
+    
+  </head>
+  <body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns  fixed-navbar">
+
+    <!-- navbar-fixed-top-->
+    <nav class="header-navbar navbar navbar-with-menu navbar-fixed-top navbar-semi-dark navbar-shadow">
+      <div class="navbar-wrapper">
+        <div class="navbar-header">
+          <ul class="nav navbar-nav">
+            <li class="nav-item mobile-menu hidden-md-up float-xs-left"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5 font-large-1"></i></a></li>
+            <li class="nav-item"><a href="index.html" class="navbar-brand nav-link"><img alt="branding logo" src="./app-assets/images/crt1.png" data-expand="./app-assets/images/crt1.png" data-collapse="./app-assets/images/crt1.png" class="brand-logo" ></a></li>
+            <li class="nav-item hidden-md-up float-xs-right"><a data-toggle="collapse" data-target="#navbar-mobile" class="nav-link open-navbar-container"><i class="icon-ellipsis pe-2x icon-icon-rotate-right-right"></i></a></li>
+          </ul>
+        </div>
+        <div class="navbar-container content container-fluid">
+          <div id="navbar-mobile" class="collapse navbar-toggleable-sm">
+            <ul class="nav navbar-nav">
+              <li class="nav-item hidden-sm-down"><a class="nav-link nav-menu-main menu-toggle hidden-xs"><i class="icon-menu5">         </i></a></li>
+              <li class="nav-item hidden-sm-down"><a href="#" class="nav-link nav-link-expand"><i class="ficon icon-expand2"></i></a></li>
+             
+            </ul>
+            <ul class="nav navbar-nav float-xs-right">
+              <li class="dropdown dropdown-language nav-item"><a id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link"><i class="flag-icon flag-icon-fr"></i><span class="selected-language">Fran&ccedil;ais</span></a>
+                <div aria-labelledby="dropdown-flag" class="dropdown-menu"><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-gb"></i> English</a><a href="#" class="dropdown-item"><i class="flag-icon flag-icon-fr"></i> Fran&ccedil;ais</a></div>
+              </li>
+              <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-bell4"></i><span class="tag tag-pill tag-default tag-danger tag-default tag-up">5</span></a>
+                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                  <li class="dropdown-menu-header">
+                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Notifications</span></h6>
+                  </li>
+                  <li class="list-group scrollable-container"><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left valign-middle"><i class="icon-cart3 icon-bg-circle bg-cyan"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">You have new order!</h6>
+                          <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">30 minutes ago</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left valign-middle"><i class="icon-monitor3 icon-bg-circle bg-red bg-darken-1"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading red darken-1">99% Server load</h6>
+                          <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Five hour ago</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left valign-middle"><i class="icon-server2 icon-bg-circle bg-yellow bg-darken-3"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                          <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Today</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left valign-middle"><i class="icon-check2 icon-bg-circle bg-green bg-accent-3"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Complete the task</h6><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Last week</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left valign-middle"><i class="icon-bar-graph-2 icon-bg-circle bg-teal"></i></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Generate monthly report</h6><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Last month</time></small>
+                        </div>
+                      </div></a></li>
+                  <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all notifications</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-notification nav-item"><a href="#" data-toggle="dropdown" class="nav-link nav-link-label"><i class="ficon icon-mail6"></i><span class="tag tag-pill tag-default tag-info tag-default tag-up">8</span></a>
+                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                  <li class="dropdown-menu-header">
+                    <h6 class="dropdown-header m-0"><span class="grey darken-2">Messages</span></h6>
+                  </li>
+                  <li class="list-group scrollable-container"><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="./app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Margaret Govan</h6>
+                          <p class="notification-text font-small-3 text-muted">I like your portfolio, let's start the project.</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Today</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left"><span class="avatar avatar-sm avatar-busy rounded-circle"><img src="./app-assets/images/portrait/small/avatar-s-2.png" alt="avatar"><i></i></span></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Bret Lezama</h6>
+                          <p class="notification-text font-small-3 text-muted">I have seen your work, there is</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Tuesday</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left"><span class="avatar avatar-sm avatar-online rounded-circle"><img src="./app-assets/images/portrait/small/avatar-s-3.png" alt="avatar"><i></i></span></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Carie Berra</h6>
+                          <p class="notification-text font-small-3 text-muted">Can we have call in this week ?</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">Friday</time></small>
+                        </div>
+                      </div></a><a href="javascript:void(0)" class="list-group-item">
+                      <div class="media">
+                        <div class="media-left"><span class="avatar avatar-sm avatar-away rounded-circle"><img src="./app-assets/images/portrait/small/avatar-s-6.png" alt="avatar"><i></i></span></div>
+                        <div class="media-body">
+                          <h6 class="media-heading">Eric Alsobrook</h6>
+                          <p class="notification-text font-small-3 text-muted">We have project party this saturday night.</p><small>
+                            <time datetime="2015-06-11T18:29:20+08:00" class="media-meta text-muted">last month</time></small>
+                        </div>
+                      </div></a></li>
+                  <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all messages</a></li>
+                </ul>
+              </li>
+              <li class="dropdown dropdown-user nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link"><span class="avatar avatar-online"><img src="./app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span><span class="user-name">Elikya</span></a>
+                <div class="dropdown-menu dropdown-menu-right"><a href="#" class="dropdown-item"><i class="icon-head"></i>Configuration</a><a href="#" class="dropdown-item"><i class="icon-mail6"></i> Mes messages</a><a href="#" class="dropdown-item"><i class="icon-clipboard2"></i> Mes T&ches</a>
+                  <div class="dropdown-divider"></div><a href="#" class="dropdown-item"><i class="icon-power3"></i> Deconnexion</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////-->
+
+
+    <!-- main menu-->
+    <div data-scroll-to-active="true" class="main-menu menu-fixed menu-dark menu-accordion menu-shadow">
+      <!-- main menu header-->
+      <div class="main-menu-header">
+        <input type="text" placeholder="Recherche courrier" class="menu-search form-control round"/>
+      </div>
+      <!-- / main menu header-->
+      <!-- main menu content-->
+      <div class="main-menu-content">
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+          <li class=" nav-item"><a href="index.html"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Accueil</span><span class="tag tag tag-primary tag-pill float-xs-right mr-2">2</span></a>
+          </li>
+          <li class=" nav-item"><a href="index.html"><i class="icon-search5"></i><span data-i18n="nav.dash.main" class="menu-title">Recherche avanc&eacute;e</span></a>
+          </li>
+          <li class=" nav-item"><a href="index.html"><i class="icon-eye6"></i><span data-i18n="nav.dash.main" class="menu-title">Supervision</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-gears"></i><span data-i18n="nav.project.main" class="menu-title">Administration</span></a>
+            <ul class="menu-content">
+              <li><a href="#" data-i18n="nav.invoice.invoice_template" class="menu-item">Gestion Personnels</a>
+              </li>
+              <li><a href="#" data-i18n="nav.gallery_pages.gallery_grid" class="menu-item">Habilitation</a>
+              </li>
+              <li><a href="#" data-i18n="nav.search_pages.search_page" class="menu-item">Services</a>
+              </li>
+              <li><a href="#" data-i18n="nav.search_pages.search_website" class="menu-item">Contacts externes</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.login_simple" class="menu-item">Contacts archives</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.register_simple" class="menu-item">Types de courrier</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.unlock_user" class="menu-item">Priorités de courrier</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.recover_password" class="menu-item">Sauvegarde</a>
+              </li>
+               <li><a href="#" data-i18n="nav.login_register_pages.register_simple" class="menu-item">Num&eacute;rotation</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.unlock_user" class="menu-item">Gestion des tâches</a>
+              </li>
+              <li><a href="#" data-i18n="nav.login_register_pages.recover_password" class="menu-item">Historique syst&egrave;me</a>
+              </li>
+            
+            </ul>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-grid2"></i><span data-i18n="nav.cards.main" class="menu-title">Envois group&eacute;s</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-folder-open-o"></i><span data-i18n="nav.advance_cards.main" class="menu-title">Dossiers et documents</span></a>
+          
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-users3"></i><span data-i18n="nav.content.main" class="menu-title">Carnet d’adresse</span></a>
+          
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-pie-graph2"></i><span data-i18n="nav.components.main" class="menu-title">Statistiques</span></a>
+           
+         
+          <li class=" navigation-header"><span data-i18n="nav.category.support">Support</span><i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-question-circle-o"></i><span data-i18n="nav.support_raise_support.main" class="menu-title">Aide</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="icon-document-text"></i><span data-i18n="nav.support_documentation.main" class="menu-title">Documentation</span></a>
+          </li>
+          <li class=" nav-item"><a href="login-simple.html"><i class="icon-document-text"></i><span data-i18n="nav.support_documentation.main" class="menu-title">Connexion</span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- /main menu content-->
+      <!-- main menu footer-->
+      <!-- include includes/menu-footer-->
+      <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+    
+<div class="app-content content container-fluid">
+        <div class="content-wrapper">
+          <div class="content-header row">
+                <div class="row match-height">
+    
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h1 class="card-title" style="text-align:center;">Administration - Gestion du personnel</h1>
+                                   <hr>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+          </div>
+          <div class="content-body"><!-- stats -->
+     <div class="row">
+      <div class="col-xl-6 col-lg-6 col-xs-12">
+          <div class="card">
+              <div class="card-body">
+                  <div class="card-block" style = "padding: 7.2px ;">
+                    
+                      <form>
+                        <div class="form-row align-items-center">
+                          <div class="col-sm-6 my-1">
+                           
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Activé</option>
+                              <option>Désactivé</option>
+                          
+                            </select>
+                          </div>
+                          
+                          <div class="col-sm-6 my-1">
+                            <button type="submit" class="btn btn-primary">Validé</button>
+                          </div>
+                        </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-xs-12">
+          <div class="card">
+              <div class="card-body">
+                  <div class="card-block">
+                   
+                      
+                        
+                        <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#myModal1"><i class="fa fa-lg fa-fw fa-user-plus"></i>
+                            ajouter
+                          </button>
+
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Importation via excel
+                      </button>
+                      <!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModal1Label">Ajouter un personnel</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="login-box">
+            <form class="login-form" action="dashboard.html">
+                    <div class="form-group">
+                      <label class="control-label">Nom</label>
+                      <input class="form-control" type="text" placeholder="Entrer votre nom" autofocus>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label">Prenom</label>
+                            <input class="form-control" type="text" placeholder="Entrer votre prenom" autofocus>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label">Service</label>
+                            <input class="form-control" type="text" placeholder="Entrer le service" autofocus>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label">Fonction</label>
+                            <input class="form-control" type="text" placeholder="Entrer la fonction" autofocus>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label">Telephone</label>
+                            <input class="form-control" type="text" placeholder="Entrer le numéro de telephone" autofocus>
+                    </div>
+                    <div class="form-group">
+                            <label class="control-label">Email</label>
+                            <input class="form-control" type="text" placeholder="Entrer votre email" autofocus>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">Mot de passe</label>
+                      <input class="form-control" type="password" placeholder="Entrer votre mot de passe">
+                    </div>
+                    
+                    <div class="form-group btn-container">
+                      <button class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>enregistrer</button>
+                    </div>
+                  </form>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+                      <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                   <div class="modal-content">
+                                          <div class="modal-header">
+                                               <h5 class="modal-title" id="exampleModalLongTitle">Importation via excel</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                               </button>
+                                           </div>
+                                      <div class="modal-body">
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            
+                                       </div>
+                          <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                           <button type="button" class="btn btn-primary">Importation</button>
+                          </div>
+                      </div>
+                </div>
+             </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     
+      
+  </div>
+    <div class="row match-height">
+    
+        <div class="col-xl-12 col-lg-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Liste personnel</h4>
+                   
+                    
+                </div>
+                <div class="card-body">
+                    
+                    <div class="table-responsive">
+                       <table id="example"  class="table table-striped table-bordered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Nom</th>
+                                    <th>Prenom</th>
+                                    <th>Service</th>
+                                    <th>Fonction</th>
+                                    <th>Telephone</th>
+                                    <th>Email</th>
+                                    
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-truncate"><a href="#">Abou</a></td>
+                                    <td class="text-truncate">Barthelemey</td>
+                                    <td class="text-truncate">RH</td>
+                                    <td class="text-truncate">secretaire</td>
+                                    <td class="text-truncate">699 88 44 77</td>
+                                    <td class="text-truncate">test@example.com</td>
+                                </tr>
+                                <tr>
+                                        <td class="text-truncate"><a href="#">Abou</a></td>
+                                        <td class="text-truncate">Barthelemey</td>
+                                        <td class="text-truncate">RH</td>
+                                        <td class="text-truncate">secretaire</td>
+                                        <td class="text-truncate">699 88 44 77</td>
+                                        <td class="text-truncate">test@example.com</td>
+                                   
+                                </tr>
+                                <tr>
+                                        <td class="text-truncate"><a href="#">Abou</a></td>
+                                        <td class="text-truncate">Barthelemey</td>
+                                        <td class="text-truncate">RH</td>
+                                        <td class="text-truncate">secretaire</td>
+                                        <td class="text-truncate">699 88 44 77</td>
+                                        <td class="text-truncate">test@example.com</td>
+                                   
+                                </tr>
+                                <tr>
+                                        <td class="text-truncate"><a href="#">Abou</a></td>
+                                        <td class="text-truncate">Barthelemey</td>
+                                        <td class="text-truncate">RH</td>
+                                        <td class="text-truncate">secretaire</td>
+                                        <td class="text-truncate">699 88 44 77</td>
+                                        <td class="text-truncate">test@example.com</td>
+                                   
+                                </tr>
+                                <tr>
+                                        <td class="text-truncate"><a href="#">Abou</a></td>
+                                        <td class="text-truncate">Barthelemey</td>
+                                        <td class="text-truncate">RH</td>
+                                        <td class="text-truncate">secretaire</td>
+                                        <td class="text-truncate">699 88 44 77</td>
+                                        <td class="text-truncate">test@example.com</td>
+                                </tr>
+                              
+                            </tbody>
+                        </table> 
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+<footer class="footer footer-static footer-light navbar-border">
+        By <i class="fa fa-love"></i><a href="#">Swiss Eco Concept SARL</a>
+ </footer>
+    
+ 
+ 
+
+      <!-- BEGIN VENDOR JS-->
+      <script src="./app-assets/js/core/libraries/jquery.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/tether.min.js" type="text/javascript"></script>
+      <script src="./app-assets/js/core/libraries/bootstrap.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/unison.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/blockUI.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/jquery.matchHeight-min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/ui/screenfull.min.js" type="text/javascript"></script>
+      <script src="./app-assets/vendors/js/extensions/pace.min.js" type="text/javascript"></script>
+      <!-- BEGIN VENDOR JS-->
+      <!-- BEGIN PAGE VENDOR JS-->
+      <script src="./app-assets/vendors/js/charts/chart.min.js" type="text/javascript"></script>
+      <!-- END PAGE VENDOR JS-->
+      <!-- BEGIN ROBUST JS-->
+      <script src="./app-assets/js/core/app-menu.js" type="text/javascript"></script>
+      <script src="./app-assets/js/core/app.js" type="text/javascript"></script>
+      <!-- END ROBUST JS-->
+      <!-- BEGIN PAGE LEVEL JS-->
+      <script src="./app-assets/js/scripts/pages/dashboard-lite.js" type="text/javascript"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#example').DataTable( {
+            columnDefs: [ {
+                orderable: false,
+                className: 'select-checkbox',
+                targets:   0
+            } ],
+            select: {
+                style:    'os',
+                selector: 'td:first-child'
+            },
+            order: [[ 1, 'asc' ]]
+        } );
+    } );
+        
+        </script>
+      <!-- END PAGE LEVEL JS-->
+    </body>
+  </html>
+  
